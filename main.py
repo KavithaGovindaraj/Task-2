@@ -64,30 +64,31 @@ count_vowels(string)
 
 #2)
 
-# Number of rows in the pyramid (can be adjusted as needed)
-num_rows = 20  # We'll create a pyramid with 20 rows
+class NumberPyramid:
+    def __init__(self, max_num):
+        self.max_num = max_num
 
-# Outer loop for each row of the pyramid
-for i in range(1, num_rows + 1):
-    # Print spaces for alignment
-    print(' ' * (num_rows - i), end='')
-    
-    # Inner loop to print numbers for the current row
-    current_number = 1
-    for j in range(1, i + 1):
-        print(f'{current_number:2} ', end='')
-        current_number += 1
-    
-    # Move to the next line after printing all numbers in the current row
-    print()
+    def create_pyramid(self):
+        num = 1
+        row = 1
+        while num <= self.max_num:
+            for _ in range(row):
+                if num > self.max_num:
+                    break
+                print(num, end=' ')
+                num += 1
+            print()  # for new line after each row
+            row += 1
 
-
+# Create an instance of the class and generate the pyramid
+pyramid = NumberPyramid(20)
+pyramid.create_pyramid()
 
 # Output:
 
-#                    1
-#                   1  2
-#                  1  2  3
+#                    1 
+#                   1  2 
+#                  1  2  3 
 #                 1  2  3  4
 #                1  2  3  4  5
 #               1  2  3  4  5  6
@@ -105,7 +106,6 @@ for i in range(1, num_rows + 1):
 #   1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
 #  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
 # 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
-
 
 #3)
 
