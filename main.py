@@ -1,4 +1,3 @@
-"""""
 1)
 def count_vowels(string):
     # Convert the string to lowercase to handle both uppercase and lowercase vowels
@@ -273,6 +272,5 @@ print("Number of words:", count_words(input_string))
 Output:
 Number of words: 8
 
-"""
 
 
