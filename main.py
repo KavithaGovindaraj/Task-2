@@ -1,4 +1,6 @@
-1)
+
+#1)
+
 def count_vowels(string):
     # Convert the string to lowercase to handle both uppercase and lowercase vowels
     string = string.lower()
@@ -46,18 +48,22 @@ def count_vowels(string):
 string = "Guvi Geeks Network Private limited"
 count_vowels(string)
 
-Output:
 
-Count of each vowel:
-A: 1
-E: 5
-I: 4
-O: 1
-U: 1
-Total number of vowels: 12
+#Output:
 
 
-2)
+#Count of each vowel:
+#A: 1
+#E: 5
+#I: 4
+#O: 1
+#U: 1
+#Total number of vowels: 12
+
+
+
+#2)
+
 # Number of rows in the pyramid (can be adjusted as needed)
 num_rows = 20  # We'll create a pyramid with 20 rows
 
@@ -74,31 +80,36 @@ for i in range(1, num_rows + 1):
     
     # Move to the next line after printing all numbers in the current row
     print()
- 
- Output:
-                    1
-                   1  2
-                  1  2  3
-                 1  2  3  4
-                1  2  3  4  5
-               1  2  3  4  5  6
-              1  2  3  4  5  6  7
-             1  2  3  4  5  6  7  8
-            1  2  3  4  5  6  7  8  9
-           1  2  3  4  5  6  7  8  9 10
-          1  2  3  4  5  6  7  8  9 10 11
-         1  2  3  4  5  6  7  8  9 10 11 12
-        1  2  3  4  5  6  7  8  9 10 11 12 13
-       1  2  3  4  5  6  7  8  9 10 11 12 13 14
-      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
-     1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16
-    1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
-   1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
-  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
- 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
 
 
-3)
+
+# Output:
+
+#                    1
+#                   1  2
+#                  1  2  3
+#                 1  2  3  4
+#                1  2  3  4  5
+#               1  2  3  4  5  6
+#              1  2  3  4  5  6  7
+#             1  2  3  4  5  6  7  8
+#            1  2  3  4  5  6  7  8  9
+#           1  2  3  4  5  6  7  8  9 10
+#          1  2  3  4  5  6  7  8  9 10 11
+#         1  2  3  4  5  6  7  8  9 10 11 12
+#        1  2  3  4  5  6  7  8  9 10 11 12 13
+#       1  2  3  4  5  6  7  8  9 10 11 12 13 14
+#      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+#     1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16
+#    1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
+#   1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+#  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+# 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+
+#3)
+
+
 def remove_vowels(input_string):
     vowels = "aeiouAEIOU"
     filtered_string = ""
@@ -109,19 +120,19 @@ def remove_vowels(input_string):
 
     return filtered_string
 
- usage:1
 input_string = "Hello, this is a sample string with vowels."
 result = remove_vowels(input_string)
 print("Original string:", input_string)
 print("String with vowels removed:", result)
 
-Output:
+#Output:
 
-Original string: Hello, this is a sample string with vowels.
-String with vowels removed: Hll, ths s  smpl strng wth vwls.
+#Original string: Hello, this is a sample string with vowels.
+#String with vowels removed: Hll, ths s  smpl strng wth vwls.
 
 
-4)
+#4)
+
 def count_unique_characters(input_string):
     # Use a set to store unique characters:
     unique_chars = set()
@@ -139,13 +150,15 @@ unique_count = count_unique_characters(input_string)
 print(f"Input string: '{input_string}'")
 print(f"Number of unique characters: {unique_count}")
 
-Output:
 
-Input string: 'Hello, World!'
-Number of unique characters: 10
+#Output:
+
+#Input string: 'Hello, World!'
+#Number of unique characters: 10
 
 
-5)
+#5)
+
 def is_palindrome(input_string):
     # Remove spaces and convert to lowercase
     processed_string = input_string.replace(" ", "").lower()
@@ -162,14 +175,16 @@ print(f"Is '{input_string1}' a palindrome? {is_palindrome(input_string1)}")
 print(f"Is '{input_string2}' a palindrome? {is_palindrome(input_string2)}")
 print(f"Is '{input_string3}' a palindrome? {is_palindrome(input_string3)}")
 
-Output:
+#Output:
 
-Is 'Madam' a palindrome? True
-Is 'Hello' a palindrome? False
-Is 'A man a plan a canal Panama' a palindrome? True
+#Is 'Madam' a palindrome? True
+#Is 'Hello' a palindrome? False
+#Is 'A man a plan a canal Panama' a palindrome? True
 
 
-6)
+
+#6)
+
 def longest_common_substring(str1, str2):
     # Initialize variables to store the length of the longest common substring and its ending position
     max_length = 0
@@ -202,12 +217,15 @@ str2 = "abdf"
 longest_substring = longest_common_substring(str1, str2)
 print(f"The longest common substring between '{str1}' and '{str2}' is '{longest_substring}'")
 
-Output:
-
-The longest common substring between 'abcdef' and 'abdf' is 'ab'
 
 
-7)
+#Output:
+#The longest common substring between 'abcdef' and 'abdf' is 'ab'
+
+
+#7)
+
+
 def most_frequent_char(input_string):
     # Remove whitespace from the string
     input_string = input_string.replace(" ", "")
@@ -230,11 +248,13 @@ def most_frequent_char(input_string):
 input_string = "example string with some characters"
 print("The most frequent character is:", most_frequent_char(input_string))
 
-Output:
-The most frequent character is: e
+
+#Output:
+#The most frequent character is: e
 
 
-8)
+#8)
+
 def are_anagrams(string1, string2):
     # Remove whitespace and convert to lowercase
     string1 = string1.replace(" ", "").lower()
@@ -253,11 +273,13 @@ string2 = "World"
 print(are_anagrams(string1, string2)) 
 
 
-Output:
-True
-False
+#Output:
+#True
+#False
 
-9)
+#9)
+
+
 def count_words(input_string):
     # Split the string into words based on whitespace
     words = input_string.split()
@@ -269,8 +291,6 @@ def count_words(input_string):
 input_string = "This is an example string with several words."
 print("Number of words:", count_words(input_string)) 
 
-Output:
-Number of words: 8
 
-
-
+#Output:
+#Number of words: 8
